@@ -1,0 +1,99 @@
+body{
+    background-color: black;
+    background-image: url(backgroundTwo.png);
+    background-repeat: repeat;
+    background-position: center;
+    width: 100%;
+    font-size: 62.5%;
+}
+:root{
+    font-size: 10px;
+}
+h1{
+    font-size: 6rem;
+    color: white;
+    letter-spacing: -1.5px;
+    border-radius: 10px;
+    text-shadow: 0 0 5px black;
+    z-index: -3;
+    position: fixed;
+    top: 0;
+}
+
+h3{
+    color: whitesmoke;
+    position: absolute;
+    background-color: rgb(65, 64, 64);
+    padding: 5px;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    bottom: -40px;
+    border-radius: 10px;
+    z-index: 1;
+}
+h3:hover{
+    background-color: maroon;
+}
+/* navigation menu and components*/
+.nav_container{
+    top: 0;
+    right: 0;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 50px;
+    background-color: black;
+    z-index: 3;
+}
+.a_container{
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 2.7em;
+    padding: 8px;
+    letter-spacing: .5px;
+}
+
+.mainContainer{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100dvw;
+    height: auto;
+    background-color: wheat;
+    top: 280px;
+    left: 0;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+.badges{
+    width: 80%;
+    height: 50%;
+    background-color: black;
+    position: relative;
+    border-radius: 10px;
+    align-items: top;
+    justify-content: center;
+    display: flex;
+    box-shadow: 0 0 5px black;
+   margin: 5rem;
+}
+
+.badgesImage{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+iframe{
+    width: 100vw;
+    height: 50vh;
+}
