@@ -1,90 +1,96 @@
+/* 
+title: 
+type: css
+creation date:
+modification date:
+note: 
+programmer: Matthew Milam
+ */
+
+/* ***************************************************************** */
+
+
+
 body{
-    background-color: black;
-    background-image: url(backgroundTwo.png);
-    background-repeat: repeat;
-    background-position: center;
-    width: 100%;
-    font-size: 62.5%;
-}
-:root{
-    font-size: 10px;
+    background: rgb(52, 52, 52);
+    background: repeating-linear-gradient(45deg, rgb(43, 43, 43), rgb(68, 68, 68) 40dvw, rgb(38, 37, 37) 5dvi);
+    margin: auto;
+    text-align: center;
 }
 h1{
-    font-size: 6rem;
-    color: white;
-    letter-spacing: -1.5px;
-    border-radius: 10px;
-    text-shadow: 0 0 5px black;
-    z-index: -3;
-    position: fixed;
-    top: 0;
+    color: antiquewhite;
+    top: 25px;
+    position: relative;
 }
-
 h3{
     color: whitesmoke;
     position: absolute;
     background-color: rgb(65, 64, 64);
-    padding: 5px;
-    width: 80%;
+    padding: 1dvi;
+    width: 75dvi;
     text-align: center;
     font-size: 2rem;
-    bottom: -40px;
-    border-radius: 10px;
+    border-radius: 1dvi;
     z-index: 1;
 }
 h3:hover{
     background-color: maroon;
 }
-/* navigation menu and components*/
-.nav_container{
-    top: 0;
-    right: 0;
+/* navbar content */
+.navbar{
+    width: 100dvw;
+    height: 5dvh;
     position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 370px;
-    height: 50px;
-    background-color: black;
-    z-index: 3;
+    z-index: 5;
+    word-spacing: 1.5dvi;
+    color: whitesmoke;
+    transition: background-color 0.5s;
+    top: 0;
 }
-.a_container{
-    display: flex;
+.navbar-sub-container{
 }
-a{
+.navbar-link{
     text-decoration: none;
-    color: white;
-    border-radius: 10px;
-    font-size: 2.7em;
-    padding: 8px;
-    letter-spacing: .5px;
+    color: whitesmoke;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background: transparent;
 }
-
-.mainContainer{
-    position: absolute;
+h2{
+    text-align: center;
+}
+/* where the main container is */
+.content{
+    background-color: rgba(39, 27, 12, 0.468);
+    margin: 8dvi;
+    padding: 5dvi;
+    border-radius: 2dvi;
+    backdrop-filter: blur(1dvi);
+    -webkit-backdrop-filter: blur(.5dvi); 
+    color: rgb(180, 180, 180);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100dvw;
-    height: auto;
-    background-color: wheat;
-    top: 280px;
-    left: 0;
+    gap: 2rem;
     flex-wrap: wrap;
-    background-color: white;
 }
 
+
 .badges{
-    width: 80%;
-    height: 50%;
+    width: 80dvi;
+    height: 50dvi;
     background-color: black;
     position: relative;
-    border-radius: 10px;
+    border-radius: 1dvi;
     align-items: top;
     justify-content: center;
     display: flex;
     box-shadow: 0 0 5px black;
-   margin: 5rem;
+
 }
 
 .badgesImage{
@@ -97,3 +103,9 @@ iframe{
     width: 100vw;
     height: 50vh;
 }
+
+
+
+
+
+
